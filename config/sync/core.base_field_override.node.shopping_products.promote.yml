@@ -1,0 +1,22 @@
+uuid: ef26e40f-a3cb-4271-9476-93aab4a8e8aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.shopping_products
+id: node.shopping_products.promote
+field_name: promote
+entity_type: node
+bundle: shopping_products
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

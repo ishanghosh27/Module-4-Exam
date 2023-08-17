@@ -1,0 +1,24 @@
+uuid: cbc79fa1-ce5b-4d83-bc41-c6ce63fe0dc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.shopping_products
+  module:
+    - text
+id: node.shopping_products.body
+field_name: body
+entity_type: node
+bundle: shopping_products
+label: Description
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

@@ -1,0 +1,104 @@
+uuid: 0d0eb0c1-058c-449a-a4ad-5431f3799dc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.shopping_products.body
+    - field.field.node.shopping_products.field_category
+    - field.field.node.shopping_products.field_price
+    - field.field.node.shopping_products.field_product_image
+    - node.type.shopping_products
+  module:
+    - image
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          89224d0b-c993-48e7-92c0-368e76324736:
+            uuid: 89224d0b-c993-48e7-92c0-368e76324736
+            region: content
+            configuration:
+              id: 'extra_field_block:node:shopping_products:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          49647809-7f2d-4234-ba48-39b3ea772537:
+            uuid: 49647809-7f2d-4234-ba48-39b3ea772537
+            region: content
+            configuration:
+              id: 'field_block:node:shopping_products:field_product_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          a5dfe84e-ba0d-41af-b23f-85d00ee471c0:
+            uuid: a5dfe84e-ba0d-41af-b23f-85d00ee471c0
+            region: content
+            configuration:
+              id: 'field_block:node:shopping_products:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.shopping_products.teaser
+targetEntityType: node
+bundle: shopping_products
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_product_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_category: true
+  field_price: true

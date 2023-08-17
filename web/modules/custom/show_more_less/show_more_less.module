@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * This module defines the hooks of my custom module.
+ */
+
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_page_attachments().
+ */
+function show_more_less_page_attachments(array &$attachments) {
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node instanceof NodeInterface && $node->getType() === 'shopping_products') {
+    $attachments['#attached']['library'][] = 'show_more_less/button';
+  }
+}

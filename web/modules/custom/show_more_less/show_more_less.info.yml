@@ -1,0 +1,5 @@
+name: Show More / Show Less
+type: module
+description: Adds a show more / show less button to the body field.
+package: Custom Modules
+core_version_requirement: ^10.0
