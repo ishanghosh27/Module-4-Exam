@@ -1,0 +1,17 @@
+uuid: 20df319f-5808-4202-9ec6-a9d84dce97ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Shopping Products'
+type: shopping_products
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

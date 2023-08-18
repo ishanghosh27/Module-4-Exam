@@ -1,0 +1,5 @@
+name: Add To Cart Button
+type: module
+description: Adds a Add To Cart button At The End Of The Body In Shopping Products Content.
+package: Custom Modules
+core_version_requirement: ^10.0

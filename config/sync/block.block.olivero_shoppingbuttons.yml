@@ -1,0 +1,44 @@
+uuid: e8fc8d23-eece-4f94-a3d0-0be0e5901208
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - shopping_buttons
+    - system
+    - user
+  theme:
+    - olivero
+id: olivero_shoppingbuttons
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: shopping_buttons
+settings:
+  id: shopping_buttons
+  label: 'Shopping Buttons'
+  label_display: visible
+  provider: shopping_buttons
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/products/*'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      content_editor: content_editor
+      administrator: administrator
+      customer: customer
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      shopping_products: shopping_products

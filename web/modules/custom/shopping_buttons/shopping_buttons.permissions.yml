@@ -1,0 +1,4 @@
+view thank you page:
+  title: 'Access Thank You Page'
+  description: 'Access Thank You Page'
+  restrict access: true

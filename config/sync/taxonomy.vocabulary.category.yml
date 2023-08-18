@@ -1,0 +1,8 @@
+uuid: 6488ed82-f42f-4fdf-a251-8c3122d57047
+langcode: en
+status: true
+dependencies: {  }
+name: Category
+vid: category
+description: 'Category of products available in the shopping platform'
+weight: 0
