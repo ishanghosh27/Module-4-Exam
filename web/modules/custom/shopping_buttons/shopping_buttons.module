@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * This module defines the hooks of my custom module.
+ */
+
+/**
+ * Implements hook_page_attachments().
+ */
+function shopping_buttons_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'shopping_buttons/icon';
+}

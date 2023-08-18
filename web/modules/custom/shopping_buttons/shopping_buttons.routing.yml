@@ -1,0 +1,6 @@
+shopping.thank.you:
+  path: '/thank-you'
+  defaults:
+    _controller: '\Drupal\shopping_buttons\Controller\ShoppingButtonsController::thankYou'
+  requirements:
+    _permission: 'view thank you page'

@@ -45,6 +45,7 @@ module:
   restui: 0
   search: 0
   serialization: 0
+  shopping_buttons: 0
   shortcut: 0
   show_more_less: 0
   smart_trim: 0

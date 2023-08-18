@@ -13,6 +13,7 @@ dependencies:
     - file
     - node
     - path
+    - shopping_buttons
     - system
     - taxonomy
     - toolbar
@@ -51,4 +52,5 @@ permissions:
   - 'view all revisions'
   - 'view own unpublished content'
   - 'view shopping_products revisions'
+  - 'view thank you page'
   - 'view the administration theme'
